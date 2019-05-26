@@ -1,5 +1,5 @@
 ---
-title: "Some Object Tracking Models"
+title: "SRDCF-for-Object-Tracking"
 tags: [Object Tracking, Computer Vision, PCA, Deep Features]
 ---
 
@@ -18,7 +18,9 @@ The desired filter \\(f\\) was obtained by minimizing the following cost functio
 \end{eqnarray}
 
 where \\(\lambda > 0\\) is the regularization parameter used to overcome overfitting.  \\(w\\) refers to spatially regularized weights which have lower values around the target and have higher values as we move away from the target. The weights are generated using the function \\(w = \mu + (m/P)^{2} + (n/Q)^{2}\\) where P and Q are the size of the image patch and \\(\mu\\) = 0.1 and \\(\eta\\) = 3 are parameters.This strategy penalizes the background pixels and gives more emphasis on the target. A comparison of typical filters learnt using DCF and SRDCF approach is given in the below image.
-![srdcf](./images/srdcf.PNG)
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/vot/srdcf.PNG" alt="comparison">
+
 *Comparison of the standard DCF (left) and the SRDCF (right). DCF has large filter coefficients residing in the background while SRDCF has peaks only near the target region. This is because filter coefficients further away from the target are penalized.*
 
 After obtaining the desired filters we can calculate the response \\(R\\) at \\(M \times N\\) spatial locations using the formula
@@ -32,18 +34,20 @@ In this thesis we are using features extracted from different layers of GoogLeNe
 The basic idea behind principal component analysis is to find a new set of basis vectors which captures the direction of largest variations.The new basis vectors can provide us new insights regarding the data.
 
  A figure illustrating this concept is given below. The data was first expressed in conventionally used coordinate system with X and Y axis as the basis vector. It can be observed that if the coordinate system is rotated then we can capture significant information about the data by using just one basis vector. The mathematical procedure for determining the new set of basis vectors obtained by rotating the initial basis is discussed below. 
- ![](./images/pcaExample.png)
+ <img src="{{ site.url }}{{ site.baseurl }}/assets/images/vot/pcaExample.PNG" alt="pcaExample">
+
  We can observe that basis vectors X\\('\\) and Y\\('\\) are better representatives of the data set than X and Y. Most of the data variation is along the X\\('\\) axis. So we can safely ignore Y\\('\\) axis without much loss of information.
 
 ### Determining the new basis
 Let X be a data vector. We need to find a vector P which can be geometrically thought as a rotation and stretch that provides a new representation for the data set i.e. \\(PX = Y\\). P acts as rotation needed to align the initial basis with the axis of maximal variance. Y is referred as the principal component of X. We want the covariance matrix \\(C_{Y}\\) to be a diagonal matrix. This will help us in minimizing the redundancy and decorrelate the variables. Rewriting the covariance \\(C_{Y}\\) in terms of PX we get the following.
-\begin{align*}
-C_{Y} & = \frac{YY^{T}}{N}  
-      &= \frac{(PX)(PX)^{T}}{N}  
-      &= \frac{PXX^{T}P^{T}}{N} 
-      &= P(\frac{XX^{T}}{N})P^{T}
-      &= PC_{x}P^{T}
-\end{align*}
+
+\begin{aligned}
+C_{Y} & = \frac{YY^{T}}{N} = \frac{(PX)(PX)^{T}}{N}  
+      = \frac{PXX^{T}P^{T}}{N} 
+      = P(\frac{XX^{T}}{N})P^{T}
+      = PC_{x}P^{T}
+\end{aligned}
+
 \begin{equation}
 C_{Y} = PC_{x}P^{T}
 \end{equation}
@@ -55,4 +59,4 @@ V^{-1}C_{X}V = D
 where the columns of V are the eigenvectors \\(v\\), and D holds the eigenvalues \\(\lambda\\) in its diagonal. The eigen vectors with higher eigen values contain the most information about the data. We refer the reader to for more details and insights regarding PCA. 
 
 The following steps can be applied on the extracted features to reduce its dimensionality. 
-![](./images/pcaFeat.png)
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/vot/pcaFeat.PNG" alt="pcaFeat">
