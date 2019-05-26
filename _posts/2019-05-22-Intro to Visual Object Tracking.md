@@ -1,8 +1,6 @@
 ---
 title: "Introduction to Visual Object Tracking"
-categories:
-  - Tutorial
-tags: [data wrangling, data science, messy data]
+tags: [Object Tracking, Computer Vision, PCA, Deep Features]
 ---
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>

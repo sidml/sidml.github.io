@@ -29,6 +29,10 @@
       </div>
     {% endif %}
 
+    {% if page.use_math %}
+    {% include mathjax_support %}
+    {% endif %}
+
     <div class="page__footer">
       <footer>
         {% include footer/custom.html %}

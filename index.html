@@ -5,10 +5,21 @@ author_profile: true
     image: "/assets/images/waterfront.jpg" -->
 ---
 
-This is Siddhartha, currently working as Scientist in Indian Space Research Organization. I am part of the payload data management group, where I am involved
+<!-- This is Siddhartha, currently working as Scientist in Indian Space Research Organization. I am part of the payload data management group, where I am involved
 in the design and development of software for verification of payload data.<br>
 I completed my undergraduate from the Department of Avionics, Indian Institute of Spcae Science and Technology in 2017. I did my BTech Project (undergraduate thesis) with Prof. Deepak Mishra on the use of Deep CNN features for the purpose
 of visual object tracking.<br>
 On this blog, I would be writing about machine learning stuff that i find interesting. I am particularly interested in the mathematical aspects of ML. I intend to
 write about some of the arcane maths commonly found in ML papers in a simplified form.
+ -->
 
+{% for post in site.posts %}
+  <article>
+    <h2>
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h2>
+    <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+  </article>
+{% endfor %}
