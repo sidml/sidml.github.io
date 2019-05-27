@@ -4,8 +4,8 @@ main:
     url: /
   - title: "About"
     url: /about/
-  - title: "Posts"
-    url: /all_posts/
+  - title: "My Github"
+    url: /my_repos/
   # - title: "Sitemap"
   #   url: /sitemap/
 

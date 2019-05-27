@@ -1,13 +1,13 @@
 ---
 layout: archive
-title: "All Blog Posts"
+title: "My Github Repos"
 author_profile: true
-permalink: /all_posts/
+permalink: /my_repos/
 # header:
 #     image: "/assets/images/fort point.png"
 ---
 
-{% for post in site.posts %}
+<!-- {% for post in site.posts %}
   <article>
     <h2>
       <a href="{{ post.url }}">
@@ -15,11 +15,12 @@ permalink: /all_posts/
       </a>
     </h2>
     <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+    <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
   </article>
-{% endfor %}
+{% endfor %} -->
 
 
-<!-- <h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>My Projects</h2>
+<h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>My Projects</h2>
 <p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">GitHub repositories that I've built.</p>
 <div class="d-sm-flex flex-wrap gutter-condensed mb-4">
   {% for repository in site.github.public_repositories limit: 9 %}
@@ -27,4 +28,4 @@ permalink: /all_posts/
       {% include repo-card.html %}
     </div>
   {% endfor %}
-</div> -->
+</div>

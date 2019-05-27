@@ -1,6 +1,7 @@
 ---
 layout: home
 author_profile: true
+use_math: true
 <!-- header:
     image: "/assets/images/waterfront.jpg" -->
 ---
@@ -21,5 +22,6 @@ write about some of the arcane maths commonly found in ML papers in a simplified
       </a>
     </h2>
     <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+    <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
   </article>
 {% endfor %}
