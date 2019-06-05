@@ -25,39 +25,17 @@ The authors wanted to optimize for accuracy and efficieny. So, they performed a 
 
 As you can see from the performance graph, EfficientNet uses fewer parameters and achieves very high accuracy. For more details please [refer](https://arxiv.org/abs/1905.11946)
 
-![Effiecient Performance](https://1.bp.blogspot.com/-oNSfIOzO8ko/XO3BtHnUx0I/AAAAAAAAEKk/rJ2tHovGkzsyZnCbwVad-Q3ZBnwQmCFsgCEwYBhgL/s640/image3.png)
+![Efficient Performance](https://1.bp.blogspot.com/-oNSfIOzO8ko/XO3BtHnUx0I/AAAAAAAAEKk/rJ2tHovGkzsyZnCbwVad-Q3ZBnwQmCFsgCEwYBhgL/s640/image3.png)
 
 # Installing dependencies
 
 
 ```python
-! git clone https://github.com/FrancescoSaverioZuppichini/A-journey-into-Convolutional-Neural-Network-visualization-.git
+!git clone https://github.com/FrancescoSaverioZuppichini/A-journey-into-Convolutional-Neural-Network-visualization-.git
 !pip install efficientnet_pytorch
-```
 
-    Cloning into 'A-journey-into-Convolutional-Neural-Network-visualization-'...
-    remote: Enumerating objects: 49, done.[K
-    remote: Counting objects: 100% (49/49), done.[K
-    remote: Compressing objects: 100% (37/37), done.[K
-    remote: Total 238 (delta 12), reused 49 (delta 12), pack-reused 189[K
-    Receiving objects: 100% (238/238), 106.41 MiB | 60.12 MiB/s, done.
-    Resolving deltas: 100% (70/70), done.
-    Collecting efficientnet_pytorch
-      Downloading https://files.pythonhosted.org/packages/06/ff/881afd965c46b11fc6f3c8316de9e08d37fc3b71056dbab861b76faee6ca/efficientnet_pytorch-0.1.0-py3-none-any.whl
-    Requirement already satisfied: torch in /opt/conda/lib/python3.6/site-packages (from efficientnet_pytorch) (1.0.1.post2)
-    Installing collected packages: efficientnet-pytorch
-    Successfully installed efficientnet-pytorch-0.1.0
-    [33mYou are using pip version 19.0.3, however version 19.1.1 is available.
-    You should consider upgrading via the 'pip install --upgrade pip' command.[0m
-
-
-
-```python
 cd A-journey-into-Convolutional-Neural-Network-visualization-/
 ```
-
-    /kaggle/working/A-journey-into-Convolutional-Neural-Network-visualization-
-    
 
 # Import Packages
 
@@ -171,7 +149,7 @@ fig.tight_layout()
 ani.save('../compare_arch.gif', writer='imagemagick') 
 ```
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/cam-viz/cam_viz" alt="cam-viz">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/cam-viz/cam_viz.gif" alt="cam-viz">
 
 
 # Conclusion
