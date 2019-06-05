@@ -20,7 +20,7 @@ title                    : "Machine Leaning Blog"
 title_separator          : "-"
 name                     : "Siddhartha"
 description              : "On this blog, i share ML related things that i find cool."
-url                      : "https://meaninglesslives.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://sidml.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 # baseurl                  : "/blog" # the subpath of your site, e.g. "/blog"
 repository               : sidml/understanding-kl-divergence # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 # site:
