@@ -111,8 +111,8 @@ author:
   name             : "Siddhartha"
   avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   # bio              : "Experienced Scientist with a demonstrated history of working in the Defense & Space industry."
-  bio              : "Scientist, ISRO"
-  location         : "Bangalore"
+  bio              : "Data Scientist"
+  location         : "Singapore"
   email            : "siddharthaiist@gmail.com"
   links:
     - label: "Email"
