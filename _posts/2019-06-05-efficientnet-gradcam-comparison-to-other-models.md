@@ -1,5 +1,5 @@
 ---
-title: "CAM visualization of Effiecient"
+title: "CAM visualization of EfficientNet"
 use_math: true
 tags: [PyTorch, EfficientNet, Vizualization]
 header:
