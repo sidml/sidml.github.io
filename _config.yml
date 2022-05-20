@@ -22,7 +22,7 @@ name                     : "Siddhartha"
 description              : "On this blog, i share ML related things that i find cool."
 url                      : "https://sidml.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 # baseurl                  : "/blog" # the subpath of your site, e.g. "/blog"
-repository               : sidml/understanding-kl-divergence # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : sidml/sidml.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 # site:
 #   github                   : "https://github.com/sidml"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -31,7 +31,7 @@ masthead_title           : # overrides the website title displayed in the masthe
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : "staticman_v2" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -46,13 +46,13 @@ comments:
     issue_term           : # "pathname" (default)
 staticman:
   allowedFields          : # ['name', 'email', 'url', 'message']
-  branch                 : # "master"
+  branch                 : "master"
   commitMessage          : # "New comment by {fields.name}"
   filename               : # comment-{@timestamp}
   format                 : # "yml"
-  moderation             : # true
+  moderation             : true
   path                   : # "/_data/comments/{options.slug}" (default)
-  requiredFields         : # ['name', 'email', 'message']
+  requiredFields         : ['name', 'message']
   transforms:
     email                : # "md5"
   generatedFields:
@@ -60,7 +60,7 @@ staticman:
       type               : # "date"
       options:
         format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
-  endpoint               : # URL of your own deployment with trailing slash, will fallback to the public instance
+  endpoint               : https://api.staticman.net/v3/entry/github/ # URL of your own deployment with trailing slash, will fallback to the public instance
 reCaptcha:
   siteKey                :
   secret                 :
@@ -111,8 +111,8 @@ author:
   name             : "Siddhartha"
   avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   # bio              : "Experienced Scientist with a demonstrated history of working in the Defense & Space industry."
-  bio              : "Data Scientist"
-  location         : "Singapore"
+  bio              : "Perception Engineer"
+  location         : "Germany"
   email            : "siddharthaiist@gmail.com"
   links:
     - label: "Email"
@@ -302,7 +302,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
   #_pages
