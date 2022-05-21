@@ -4,14 +4,9 @@ main:
     url: /
   - title: "About"
     url: /about/
-  - title: "My Github"
-    url: /my_repos/
-  # - title: "Sitemap"
-  #   url: /sitemap/
-
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
+  - title: "Publications"
+    url: /publications/
+  - title: "Work Experience"
+    url: /work/
+  - title: "Projects"
+    url: /projects/
