@@ -2,7 +2,7 @@
 main:
   - title: "Home"
     url: /
-  - title: "About"
+  - title: "About Me"
     url: /about/
   - title: "Publications"
     url: /publications/

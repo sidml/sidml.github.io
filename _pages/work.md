@@ -4,19 +4,19 @@ layout: archive
 author_profile: true
 permalink: /work/
 ---
-***
 ## [Work Experience](#work-experience)
 
 ### Indian Space Research Organization
 **Scientist; August 2017 – August 2019; Bengaluru, India** <br>
-- Data Processing System for Indian Lunar Mission (chandrayan 2)
+With [Gaurav Upadhyay](https://www.linkedin.com/in/gaurav-upadhyay-23625b1b/).
+- Data Processing System for Indian Lunar Mission [Chandrayaan-2](https://en.wikipedia.org/wiki/Chandrayaan-2) and [EMISAT](https://en.wikipedia.org/wiki/EMISAT)
 - Deep learning based classification & segmentation of cloud cover in Hyperspectral Images.
 - Software for CCSDS protocol verification.
 - Time series analysis and anomaly detection.
 
 ### Hertzwell
 **Perception Engineer; September 2019 – ; Singapore** <br>
-With [Guohua Wang](guohua.wang@hertzwell.com).
+With [Guohua Wang](https://scholar.google.com/citations?user=RZkOfT4AAAAJ&hl=en&oi=sra).
 - Real time Panoptic Image Segmentation of pointcloud and camera images.
 - Implementation & algorithm development of 3D Object detection algorithms.
 - Waveform optimization using Reinforcement learning.
