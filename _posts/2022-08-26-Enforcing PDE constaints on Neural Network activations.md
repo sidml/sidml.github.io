@@ -11,7 +11,7 @@ header:
 Introduction
 ============================================
 Recently I came across an interesting paper: Condensing CNNs with Partial Differential Equations by Kag et al. The paper proposes a way to enforce constraints on the intermediate activations in a CNN model. What is the advantage of enforcing these constraints ? Through extensive experiments on different datasets [ImageNet included] they show that it's possible to reduce the computational and storage costs by 2-5 times without any significant loss in performance!
-Their proposed layer which applies PDE constraints is also easy to incorporate in existing CNN architectures. The author's provide PyTorch code to replicate their experiments. I have reproduced their main results in TensorFlow. The code is here
+Their proposed layer which applies PDE constraints is also easy to incorporate into existing CNN architectures. The author's provide PyTorch code to replicate their experiments. I have reproduced their main results in TensorFlow. The code is [here](https://github.com/sidml/Constraining-NN-Activations-with-PDE).
 
 
 Diffusion-Advection PDE
