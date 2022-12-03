@@ -41,17 +41,17 @@ I am skeptical of the following claims:
 - > We perceive the world not as it is, but as it is useful for us. We can respond more quickly and more effectively to something happening in the 
 world if we perceive that thing as really existing.
 
-I am not sure why perceiving something as actually existing confers an advantage. There are lot of other possibilities.
-For instance, we could have had two separate perceptions. One of them could be based on raw sensory inputs (i.e. not based on priors) and other 
-could be a hallucination based on the priors (like the author proposes). Having these two perceptions simultaneously would have allowed
-the development of a third system. The third system would have been responsible for dynamically switching between sensory or hallucinatory perception,
-depending on which is more useful in the current context.
+    I am not sure why perceiving something as actually existing confers an advantage. There are lot of other possibilities.
+    For instance, we could have had two separate perceptions. One of them could be based on raw sensory inputs (i.e. not based on priors) and other 
+    could be a hallucination based on the priors (like the author proposes). Having these two perceptions simultaneously would have allowed
+    the development of a third system. The third system would have been responsible for dynamically switching between sensory or hallucinatory perception,
+    depending on which is more useful in the current context.
 
 - Author's disagreement about Bostrom's claims. 
 
-Nick Bostrom roughly claims that consciousness simulation is equivalent to instantiation. Being a functionalist, Bostrom's claim
-resonates with me. I am not sure why the author disagrees with this claim since Bostrom's claim doesn't necessiate that phenomenology
-has nothing to do with consciousness. Phenomenological experience maybe a necessity for simulated beings to be conscious.
+    Nick Bostrom roughly claims that consciousness simulation is equivalent to instantiation. Being a functionalist, Bostrom's claim
+    resonates with me. I am not sure why the author disagrees with this claim since Bostrom's claim doesn't necessiate that phenomenology
+    has nothing to do with consciousness. Phenomenological experience maybe a necessity for simulated beings to be conscious.
 
 In the final section of the book, the author discusses the relationship between consciousness and intelligence.
 This section becomes even more relevant today. Just recently there was a raging debate about whether Google's chatbot was conscious or not. I completely agree with the author's perspective that consciousness can exist without intelligence and intelligence can exist without consciousness too.
