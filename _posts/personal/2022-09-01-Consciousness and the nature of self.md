@@ -8,7 +8,7 @@ read_time: false
 
 In this post I will discuss an interesting proposal by Dr. Anil Seth about the nature of self in his book `Being You: A New Science of Consciousness`.
 
-Dr. Seth starts by assuming that by assuming that phenomenology is necessary for consciousness. 
+Dr. Seth starts by assuming that phenomenology is necessary for consciousness. 
 > For an organism to be conscious, it has to have some kind of phenomenology for itself.
 Wherever there is experience, there is phenomenology and wherever there is phenomenology there is consciousness
 
@@ -17,8 +17,7 @@ phenomenology is NOT the only possible necessary condition for consciousness to 
 global workspace theory emphasise functionalism over phenomenology.
 
 Assuming the importance of phenomenology, he proposes the following:
-- Our conscious experiences of the world and the self are forms of brain-based prediction - controlled hallucinations that arise through
-    and because of our living bodies.
+- Our conscious experiences of the world and the self are forms of brain-based prediction - controlled hallucinations that arise through and because of our living bodies.
 - Experience of change is another variety of controlled hallucination.
 - We perceive ourselves to be stable over time because of self-fulfilling prior expectation and self-change-blindness. 
 - Intelligence is neither a necessary nor a sufficient criterion for consciousness. 
