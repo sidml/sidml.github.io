@@ -16,7 +16,7 @@ Here are a few details about my implementation.
 MSCOCO or Kitti datasets are big and not everyone is interested in understanding them just to do a few experiments. So, I decided to write a function that automatically generates a toy dataset of circles.  The dataset generates an image with multiple circles (max 5]. The circles may overlap. 
 ## The Model
 I didn't want to complicate things so I used resnet 18 as encoder and followed unet in the upsampling stages. Let's say the input to model is 1x1x256x256 [Batch Size x Channels x Width x Height], then output of
-model will be 1x[N+4]x64x64. Here 1 is the batch size, N+4 is the number of output channels and 64 is the downsampled image width. Here \\(N\\) is the number of object categories. In my implementation we only have one category of object i.e. circle. So, in our case the output is 1x5x64x64. Also, notice that we could have gone for complete upsampling like in UNET. The authors went for 64x64 size. An advantage of traning on downsampled images is that it reduces the number of parameters. 
+model will be 1x[N+4]x64x64. Here 1 is the batch size, N+4 is the number of output channels and 64 is the downsampled image width. Here \\(N\\) is the number of object categories. In my implementation we only have one category of object i.e. circle. So, in our case the output is 1x5x64x64. Also, notice that we could have gone for complete upsampling like in UNET. The authors went for 64x64 size. An advantage of training on downsampled images is that it reduces the number of parameters. 
 
 Now an obvious question is if our model output is 4 times smaller \(say 64\) than the input image, then how are we going to get a fine prediction about the object location ? It seems like we can be off by 4 pixels both in height and width... 
 
@@ -42,7 +42,7 @@ For size and offset predictions,we basically use l1 loss normalized by the numbe
 
 ## Training details
 
-I used Adam opimtizer with default settings. The model starts giving reasonable output after training for around 10 epochs.
+I used Adam optimizer with default settings. The model starts giving reasonable output after training for around 10 epochs.
 We perform non maxima suppression [using Max pooling] on the model class maps. The top 100 predictions are selected. We use offset maps to finetune object coordinates. During visualization, I set a hard threshold of 0.25 i.e. if draw bounding box only if model confidence > 0.25. If you don't care about false alarms, you should probably set a lower threshold.
 
 ## Conclusion

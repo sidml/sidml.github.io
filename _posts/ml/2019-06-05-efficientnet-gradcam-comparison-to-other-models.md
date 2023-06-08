@@ -8,7 +8,7 @@ header:
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 Recently Google AI Research published a paper titled “EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks”. In this paper the authors propose a new architecture which achieves state of the art classification accuracy on ImageNet while being 8.4x smaller and 6.1x faster on inference than the best existing CNN.
-It achieves high level of acacuracy on many other datasets like CIFAR-100, Flowers and Cars. Good results on multiple dataset shows that the architecture can be used for transfer learning. 
+It achieves high level of accuracy on many other datasets like CIFAR-100, Flowers and Cars. Good results on multiple dataset shows that the architecture can be used for transfer learning. 
 
 In this notebook, I try to compare the proposed efficient models with other popular architectures like densenet and resnet. I use  [GradCam](https://arxiv.org/abs/1610.02391) to highlight what different models are looking at.
 
@@ -17,9 +17,9 @@ You can find a very nice implementation of GradCam [here](https://github.com/Fra
 # About EfficientNet
 
 
-A naive way to increase the performance of neural networks is to increase make CNN deeper. A great example, would be resnet ehich has several variations ranging from 18 to 202. Making the CNN deeper or wider may increase the performance but it comes at great computational cost. So we need some way to balance our ever increasing quest for performance with compuatational cost. In the paper, the authors propose a new model scaling method that uses a simple compound coefficient to scale up CNNs in a more structured manner. This method helps them to decide when to increase the depth or width of the network.
+A naive way to increase the performance of neural networks is to increase make CNN deeper. A great example, would be resnet ehich has several variations ranging from 18 to 202. Making the CNN deeper or wider may increase the performance but it comes at great computational cost. So we need some way to balance our ever increasing quest for performance with computational cost. In the paper, the authors propose a new model scaling method that uses a simple compound coefficient to scale up CNNs in a more structured manner. This method helps them to decide when to increase the depth or width of the network.
 
-The authors wanted to optimize for accuracy and efficieny. So, they performed a neural architecture search. This search yielded th Efficient-B0 archictecture which looks pretty simple and straightforward to implement.
+The authors wanted to optimize for accuracy and efficiency. So, they performed a neural architecture search. This search yielded th Efficient-B0 architecture which looks pretty simple and straightforward to implement.
 
 ![EfficientNet-B0 Architecture](https://1.bp.blogspot.com/-DjZT_TLYZok/XO3BYqpxCJI/AAAAAAAAEKM/BvV53klXaTUuQHCkOXZZGywRMdU9v9T_wCLcBGAs/s640/image2.png)
 
@@ -154,6 +154,6 @@ ani.save('../compare_arch.gif', writer='imagemagick')
 
 # Conclusion
 
-As we can see from the above CAM vizualization, the highlighted areas are very specific for EB0 and EB3. The highlighted portions for alexnet are all over the place and don't make intuitive sense. Densenet 121 and Resnet 152 perform far better but still the size of highighted area is large. Surprisingly the performance of EB0 seems to be better than EB3 ! The pretrained model weights for EB7 haven't been release yet. I can't wait to see how it performs.
+As we can see from the above CAM visualization, the highlighted areas are very specific for EB0 and EB3. The highlighted portions for alexnet are all over the place and don't make intuitive sense. Densenet 121 and Resnet 152 perform far better but still the size of highlighted area is large. Surprisingly the performance of EB0 seems to be better than EB3 ! The pretrained model weights for EB7 haven't been release yet. I can't wait to see how it performs.
 
 I think, the ability of EB0 and EB3 to quickly zoom in on the most relevant features in the image, makes it suitable for object tracking and detection problems. I am sure we will be seeing some amazing results in the coming months. 
