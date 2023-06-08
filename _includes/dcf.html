@@ -1,0 +1,81 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/dcf.css">
+    <title>DCF Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display-screen">
+                <div id="display"></div>
+            </div>
+            <!-- <div class="buttons">
+                <table>
+                    <tr>
+                        <td><button class="btn-operator" id="clear">C</button></td>
+                        <td><button class="btn-operator" id="/">&divide</button></td>
+                        <td><button class="btn-operator" id="*">&times</button></td>
+                        <td><button class="btn-operator" id="backspace"><</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-number" id="7">7</button></td>
+                        <td><button class="btn-number" id="8">8</button></td>
+                        <td><button class="btn-number" id="9">9</button></td>
+                        <td><button class="btn-operator" id="-">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-number" id="4">4</button></td>
+                        <td><button class="btn-number" id="5">5</button></td>
+                        <td><button class="btn-number" id="6">6</button></td>
+                        <td><button class="btn-operator" id="+">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-number" id="1">1</button></td>
+                        <td><button class="btn-number" id="2">2</button></td>
+                        <td><button class="btn-number" id="3">3</button></td>
+                        <td rowspan="2"><button class="btn-operator" id="equal">=</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-operator" id="(">(</button></td>
+                        <td><button class="btn-number" id="0">0</button></td>
+                        <td><button class="btn-oerator" id=")">)</button></td>
+                    </tr>
+                </table>
+            </div> -->
+            <div class="dcf-inputs">
+                <div id="inputs">
+                    <label for="cash-flow">Cash Flow:</label>
+                    <input type="number" step="any" id="cash-flow" value="3074.6" name="cash-flow"> 
+                    <label for="total-cash">Total cash:</label>
+                    <input type="number" step="any" id="total-cash" value="6211.5" name="total-cash"> 
+                    <label for="total-debt">Total debt:</label>
+                    <input type="number" step="any" id="total-debt" value="40511.3" name="total-debt"> 
+                    <label for="num-shares">Number of shares:</label>
+                    <input type="number" step="any" id="num-shares" value="211.2" name="num-shares"> 
+                    <label for="growth-rate">Growth Rate (in %):</label>
+                    <input type="number" step="any" id="growth-rate" value="10" name="growth-rate"> 
+                    <label for="terminal-growth-rate">Terminal Growth Rate (in %):</label>
+                    <input type="number" step="any" id="terminal-growth-rate" value="1" name="terminal-growth-rate"> 
+                    <label for="discount-rate">Discount Rate (in %):</label>
+                    <input type="number" step="any" id="discount-rate" value="7.2" name="discount-rate"> 
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="btn-equal" id="calculate">Calculate</button>
+                <button class="btn-reset" id="reset">Clear Plots</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="../assets/js/dcf.js"></script>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    
+    <div id="growthPlot" style="width:100%;max-width:700px"></div>
+    <div id="discountPlot" style="width:100%;max-width:700px"></div>
+    
+    <!-- <script>
+    </script> -->
+</body>
