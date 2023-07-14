@@ -6,6 +6,9 @@ use_math: true
 
 {% for post in site.posts %}
   {% if post.path contains 'personal' %}
+    {% if post.hidden %}
+      {% continue %}
+    {% endif %}
     <article>
       <h2>
         <a href="{{ post.url }}">
