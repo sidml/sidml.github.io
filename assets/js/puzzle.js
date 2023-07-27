@@ -12,7 +12,7 @@ let currentPiece;
 let currentDropPiece;
 let mouse;
 img.addEventListener("load", onImage, false);
-img.src = "/assets/images/personal/puzzle/neruda.png";
+img.src = "/assets/images/personal/puzzle/gandhi.jpg";
 
 // https://stackoverflow.com/q/16124569
 function goFullScreen(){
