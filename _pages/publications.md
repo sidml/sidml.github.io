@@ -57,4 +57,14 @@ Key Highlights:
 
 [[Thesis PDF](https://drive.google.com/file/d/1pkoDCz5TCizen79yNJZXtP1xxRtFfwTv/view?usp=sharing), [Defense Slides](https://docs.google.com/presentation/d/1Rne0Pj28__HyKmdye8dQ9iMd9JQcBctV/edit?usp=sharing&ouid=102267158225060172499&rtpof=true&sd=true)], [Survey of prior methods](https://docs.google.com/presentation/d/1CrjicZDUMwgn4BYDI0hmjbSptabpwmSj/edit?usp=sharing&ouid=102267158225060172499&rtpof=true&sd=true)
 
-***
+## [Master Thesis](#mtech)
+_This thesis was a part of my Master's program in the Dept. of Avionics at Saarland University, supervised by Professor [Joachim Weickert](https://scholar.google.com/citations?user=IWwCuGAAAAAJ&hl=en)._
+
+Our goal was to investigate the connections between learnt weights in convolution filters and partial derivative operators. We found a strong connection between the Laplacian operator and filter weights in the final layer. We also demonstrated that it is possible to improve computational efficiency by constraining CNN activation maps with mathematically well-understood diffusion PDEs without a significant drop in performance. \\
+Key Highlights:
+1.  Most popular formulation of CNNs are highly sensitive to grid size changes because they are not approximating image derivatives *[consistently](https://en.wikipedia.org/wiki/Numerical_methods_for_ordinary_differential_equations#Consistency_and_order)*. We propose a novel representation of the convolution layer using Sobel filters which is less sensitive to changes in grid size.
+2.  Our analysis of ImageNet
+pre-trained models revealed an almost linear pattern between the second derivative operators in x and y direction. This may indicate a link between the Laplacian kernel and learnt convolution kernels.
+3. Diffusion PDEs like ([Delta Stencil](https://link.springer.com/chapter/10.1007/978-3-642-38267-3_32)) can be used to constrain CNN activation maps and improve computational efficiency.
+
+[[Thesis PDF](https://drive.google.com/file/d/1U9oa0G1L09RRfpYTMVdWmBzleCa8YqwA/view?usp=sharing), [Defense Slides](https://drive.google.com/file/d/1n27xllBAqDFlEgeGqZCgY6plPhZtl58t/view?usp=sharing)]
