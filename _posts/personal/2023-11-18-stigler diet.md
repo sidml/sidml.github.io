@@ -37,9 +37,9 @@ The dataset is located [here](https://docs.google.com/spreadsheets/d/1xUptnXwkS5
 
 The optimization problem that we are trying to solve can be mathematically thought in the following way. Let $f^{i}\_{n}$ denote the nutrient $n$ content in food product $f^{i}$. In the current dataset, we have 51 food products, so $0\leq i \leq 50$. Since we don't have data for vitamins and calcium content for most food products, let us only optimize for the major nutrients like protein, carbohydrate etc. For the results below, I have considered 8 nutrients i.e. $0\leq n \leq 7$.
 Let $p^{i}$ be the price of $i$ th food product and $w^{i}$ is the weight of the food product that we are consuming. Our intention is to find $w^{i}$ such that the total cost is minimized and the nutrient requirements are satisfied. The total cost will be the sum of the total amount spent on each product. So, our objective is to minimize the following quantity
-$ \sum_{i=0}^{51} p^{i}w^{i}$
+$ \sum_{i=0}^{50} p^{i}w^{i}$
 subject to the constraint
-$f^{i}\_{n} w_{i} \geq N^{i}, \forall i \in \\{0,1.. 51\\}$. $N^{i}$ denotes the daily requirement for nutrient $i$. For example, a person requires approximately 70g of protein daily. The nutrient requirement varies based
+$f^{i}\_{n} w_{i} \geq N^{i}, \forall i \in \\{0,1.. 50\\}$. $N^{i}$ denotes the daily requirement for nutrient $i$. For example, a person requires approximately 70g of protein daily. The nutrient requirement varies based
 on age, gender and level of physical activity. Different sources have different recommendations for the daily requirement. So, I have used roughly the average requirement for a moderately active adult male. Solving the optimization problem using [OR tools]((https://developers.google.com/optimization/)), leads to the following optimal diet in Germany in October 2023.
 
 ```

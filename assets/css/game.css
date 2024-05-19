@@ -1,0 +1,125 @@
+/* Basic styles */
+/* body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+} */
+
+/* Heading styles */
+/* h1 {
+  color: #333;
+} */
+
+/* Form/input styles */
+input[type="number"],
+input[type="text"] {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px; /* Adjust width as needed */
+}
+
+/* Button styles */
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+/* Primary button style */
+#startButton {
+  background-color: #10ce13;
+  color: #fff;
+}
+
+#headButton, #tailButton {
+  background-color: #3498db; /* Primary button color */
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Add some padding */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Increase font size */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+#headButton:hover, #tailButton:hover {
+  background-color: #2980b9; /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+#headButton:active, #tailButton:active {
+  background-color: #1f6391; /* Even darker shade on active click */
+  transform: translateY(0); /* Reset lift effect on active click */
+}
+
+/* Optional: Add focus styles for better accessibility */
+#headButton:focus, #tailButton:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5); /* Custom focus outline */
+}
+
+/* Secondary button style */
+#resetButton {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+/* Button hover effect */
+button:hover {
+  filter: brightness(85%);
+}
+
+/* Paragraph styles */
+p {
+  margin-bottom: 20px;
+}
+
+/* Outcome text styles */
+#outcomeText {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* Plot styles */
+#plot {
+  margin-top: 20px;
+}
+
+/* Timer styles */
+#timer {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Strong font weight for specific elements */
+#availableAmount {
+  font-weight: bold;
+}
+
+
+/* Game settings styles */
+#gameSettings {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+#gameSettings h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#gameSettings p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+}
